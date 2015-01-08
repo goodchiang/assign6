@@ -58,7 +58,7 @@ class Snake{
              case DIR_UP:
                     this.y-=snakeSize;
                     if(this.y < 20){
-                      this.y = height;
+                      this.y = height-snakeSize;
                     }
                     break;
              case DIR_DOWN:
@@ -70,7 +70,7 @@ class Snake{
              case DIR_LEFT:
                     this.x-=snakeSize;
                     if(this.x < 0){
-                      this.x = width;
+                      this.x = width - snakeSize;
                     }
                     break;
              case DIR_RIGHT:
