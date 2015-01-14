@@ -12,8 +12,8 @@ class Bait{
       }
 
       void setBait(Snake snake){
-        x = int(random(width-10));
-        y = int(random(20,height-10));;
+        x = int(random(0,width /snakeSize-1))*20+5;
+        y = int(random(1,height/snakeSize-1))*20+5;
         for(Snake tmp = snake ;tmp!=null;tmp=tmp.next){  
           if(tmp.x+snakeSize >= x && tmp.x <= x+10 &&
              tmp.y+snakeSize >= y && tmp.y <= y+10){
@@ -36,8 +36,8 @@ class Bait{
       //-----------------------------------------------
       void setSpecialBait(Snake snake){
         if(baitNums % 10 == 0 && score!= 0 && specialBait){
-          sx = int(random(width-20));
-          sy = int(random(40,height-20));
+          sx = int(random(0,width /snakeSize-1))*20+10;
+          sy = int(random(2,height/snakeSize-1))*20+10;
           for(Snake tmp = snake ;tmp!=null;tmp=tmp.next){  
             if(tmp.x+snakeSize >= sx - 5 && tmp.x <= sx+5 &&
                tmp.y+snakeSize >= sy - 5 && tmp.y <= sy+5){

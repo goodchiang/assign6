@@ -11,14 +11,13 @@ final int DIR_RIGHT = 4;
 Img img;
 Snake snake;
 Bait bait;
-boolean ai=false;
 int currentFrame = 0;
 int currentTime  = 0;
-int snakeSize = 20;
-int speedLevel = 20;
-int bodyLength = 5;
-int gameState = 0;
-int snakeDir = 0; 
+int snakeSize    = 20;
+int speedLevel   = 20;
+int bodyLength   = 5;
+int gameState    = 0;
+int snakeDir     = 0; 
 
 //BONUS 
 boolean d_up,d_down,d_left,d_right;
